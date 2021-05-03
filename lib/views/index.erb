@@ -3,12 +3,15 @@
     <title>The Gossip Project</title>
   </head>
   <body>
-    <h1>Mon super site de gossip, depuis le dossier views!</h1>
-    <p> Voici tout les Gossips, faites vous plaisir!!!</p>
+    <u><h1>Mon super site de gossip de THP</h1></u>
+   
+    <a href="/gossips/new/"><b>Créer un Nouveau Gossip</b></a>
+     <h2> Voici tout les Gossips, faites vous plaisir!!!</h2>
+    <p><b>Liste des gossips avec leurs auteurs</b></p>
     <% gossips.each do |gossip| %>
         <p>
           <%= gossip.author %> a dit: <br/>
-          <a href="/gossips/<%= gossips.index(gossip) + 1 %>"> <%= gossip.content %></a>
+          <a href="/gossips/<%= gossips.index(gossip) + 1 %>"> <%= gossip.content.gsub(/.(?=.{6})/,"*")%></a>
         </p>
       <% end %>
   <body>

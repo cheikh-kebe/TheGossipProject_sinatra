@@ -1,14 +1,14 @@
 <html>
   <head>
-    <title>show</title>
+    <title>Show me your Gossip!</title>
   </head>
   <body>
-    <h1>La Page des Potins</h1>
+    <u><h1>La Page des Pot-pot-potins</h1></u>
     <p>Voici le potin numéro : <%=params['id']%><br>
-    Voici son autheur : <%= gossips.author %><br/>
-    Voici le potin : <%= gossips.content %> <a href = "">
+    Voici son auteur : <b><%= gossips.author %></b><br/>
+    Voici le potin : <b><%= gossips.content %></b><a href = "">
     </p>
-    <a href="/">Retour a la page d'acceuil</a>
-    <a href="/gossips/<%=params['id']%>/edit">Modifier le potin</a>
+    <a href="/">Retour à la case départ!</a>
+    &nbsp;&nbsp;<a href="/gossips/<%=params['id']%>/edit">Change moi ça !!!</a>
   </body>
 </html>
