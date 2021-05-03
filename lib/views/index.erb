@@ -4,5 +4,13 @@
   </head>
   <body>
     <h1>Mon super site de gossip, depuis le dossier views!</h1>
+    <p> Voici tout les Gossips, faites vous plaisir!!!</p>
+    <% gossips.each do |gossip| %>
+        <p>
+          <%= gossip.author %> a dit: <br/>
+          <a href="/gossips/<%= gossips.index(gossip) + 1 %>"> <%= gossip.content %></a>
+        </p>
+      <% end %>
   <body>
 </html>
+

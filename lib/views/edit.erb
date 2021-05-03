@@ -1,0 +1,12 @@
+<html>
+  <head>
+    <title>Gossip forge</title>
+  </head>
+  <body>
+    <h1>Ré-éditeur de potins</h1>
+    <p>Tu peux ré-éditer ton potin via le formulaire ci-dessous</p>
+    <form action ='/gossips/edit/<%= params['id']%>' method='post'>
+      Balance ici le potin édité : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+  </body>
+</html>
