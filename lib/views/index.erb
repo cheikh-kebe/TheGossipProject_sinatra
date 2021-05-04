@@ -11,7 +11,7 @@
     <% gossips.each do |gossip| %>
         <p>
           <%= gossip.author %> a dit: <br/>
-          <a href="/gossips/<%= gossips.index(gossip) + 1 %>"> <%= gossip.content.gsub(/.(?=.{6})/,"*")%></a>
+          <a href="/gossips/<%= gossips.index(gossip) + 1 %>"> <%=gossip.content%></a>
         </p>
       <% end %>
   <body>
